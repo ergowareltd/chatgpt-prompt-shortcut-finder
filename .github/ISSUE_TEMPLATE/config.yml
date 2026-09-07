@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Documentation
+    url: https://github.com/ergowareltd/chatgpt-prompt-shortcut-finder#readme
+    about: Check the README and project documentation before opening a new issue.
+
+  - name: About the codewords
+    url: https://github.com/ergowareltd/chatgpt-prompt-shortcut-finder/blob/main/docs/ABOUT_CODEWORDS.md
+    about: Learn what the slash-style codewords are and how they are intended to be used.
