@@ -1,0 +1,82 @@
+name: Feature request
+description: Suggest a new feature or improvement for ChatGPT Prompt Shortcut Finder
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement.
+
+        Please describe the problem you want to solve and how you expect the feature to work.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What problem would this feature solve?
+      placeholder: |
+        Explain the current limitation or use case.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe how you think the feature should work.
+      placeholder: |
+        Explain the expected behavior, controls, workflow or output.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area of the application
+      options:
+        - Command search
+        - Ranking / recommendations
+        - Filters
+        - Command combinations
+        - Command library
+        - Export
+        - Streamlit interface
+        - Installation / setup
+        - Testing / CI
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Example workflow
+      description: Describe how a user would use the proposed feature.
+      placeholder: |
+        1. Open the application
+        2. Enter ...
+        3. Select ...
+        4. The application should ...
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you tried another solution or workaround?
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add screenshots, examples or other useful information.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for a similar feature request.
+          required: true
+        - label: I understand that the slash-style codewords are user-defined prompt labels, not official ChatGPT commands.
+          required: true
